@@ -1,33 +1,68 @@
-# tamrinGraphic
+# Hollow Knight 2D Demake - LibGDX (Java)
 
-A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
+A feature-rich 2D platformer game inspired by **Hollow Knight**, developed as an advanced computer graphics academic project using the **LibGDX** framework and **Java**. The project implements a clean **Model-View-Controller (MVC)** architectural pattern, custom physics, state management, and asset loading.
 
-This project was generated with a template including simple application launchers and an `ApplicationAdapter` extension that draws libGDX logo.
+---
 
-## Platforms
+## 🎮 Features & Gameplay
 
-- `core`: Main module with the application logic shared by all platforms.
-- `lwjgl3`: Primary desktop platform using LWJGL3; was called 'desktop' in older docs.
+*   **Fluid Movement Mechanics:** Smooth running, jumping, double jumping, airborne control, dashing, and the iconic *Focus* healing mechanic.
+*   **Combat & Spells:** Precise melee slash attacks with combo variations, projectile spells (*Soul Ball*, *Soul Scream*), and dynamic hit reactions.
+*   **Boss & Enemy AI:** Fully scripted AI states for multiple enemies (Crawlid, Crystallized, Husk, Mosquito, Mosscreep, Mossfly) and a challenging boss encounter with the **False Knight**.
+*   **Interactive UI & Menus:** Main menu, pause menu, inventory, achievements tracker, cheat menu, and settings panel.
+*   **Save System:** JSON-based save/load slot management for game progression and player configurations.
+*   **Audio & Visuals:** Immersive sound effects, background tracks, and custom particle/slash visual effects using LibGDX scene graph and asset manager.
 
-## Gradle
+---
 
-This project uses [Gradle](https://gradle.org/) to manage dependencies.
-The Gradle wrapper was included, so you can run Gradle tasks using `gradlew.bat` or `./gradlew` commands.
-Useful Gradle tasks and flags:
+## 🏗️ Project Architecture (MVC)
 
-- `--continue`: when using this flag, errors will not stop the tasks from running.
-- `--daemon`: thanks to this flag, Gradle daemon will be used to run chosen tasks.
-- `--offline`: when using this flag, cached dependency archives will be used.
-- `--refresh-dependencies`: this flag forces validation of all dependencies. Useful for snapshot versions.
-- `build`: builds sources and archives of every project.
-- `cleanEclipse`: removes Eclipse project data.
-- `cleanIdea`: removes IntelliJ project data.
-- `clean`: removes `build` folders, which store compiled classes and built archives.
-- `eclipse`: generates Eclipse project data.
-- `idea`: generates IntelliJ project data.
-- `lwjgl3:jar`: builds application's runnable jar, which can be found at `lwjgl3/build/libs`.
-- `lwjgl3:run`: starts the application.
-- `test`: runs unit tests (if any).
+The project is structured following strict software engineering principles, separating game logic from rendering and state representation:
 
-Note that most tasks that are not specific to a single project can be run with `name:` prefix, where the `name` should be replaced with the ID of a specific project.
-For example, `core:clean` removes `build` folder only from the `core` project.
+```text
+core/src/main/java/io/github/some_example_name/
+├── controller/       # Game loops, audio systems, collision resolution, and menu controllers
+├── model/            # Game entities, player stats, enemy states, and save data structures
+└── view/             # Screen renderers, map loaders, UI components, and animations
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+*   Java Development Kit (JDK 17 or higher)
+*   Gradle (Wrapper is included in the repository)
+
+### Running the Game locally
+
+Clone the repository and run the desktop launcher via Gradle:
+
+```bash
+git clone https://github.com/kianhajipour/HollowKnight-LibGDX.git
+cd HollowKnight-LibGDX
+```
+
+*   **On Windows:**
+    ```powershell
+    ./gradlew lwjgl3:run
+    ```
+*   **On Linux/macOS:**
+    ```bash
+    ./gradlew lwjgl3:run
+    ```
+
+---
+
+## 📂 Project Structure
+
+*   `core/` - Shared game logic, MVC architecture, and core systems.
+*   `lwjgl3/` - Desktop-specific launcher (LWJGL3 backend) and window configurations.
+*   `assets/` - Spritesheets, textures, audio tracks, fonts, and Tiled maps (`.tmx`).
+*   `database/` - JSON configurations and save slot files.
+
+---
+
+## 🛡️ License
+
+This project is developed for educational and portfolio purposes as part of computer graphics coursework.
