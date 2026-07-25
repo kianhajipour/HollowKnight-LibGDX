@@ -1,5 +1,7 @@
 
-<img width="433" height="630" alt="CP_Posters_0000_HD" src="https://github.com/user-attachments/assets/060b3b1d-e9be-4506-94a9-cae2baa6306c" />
+<div align="center">
+  <img width="250" alt="Hollow Knight Demake Gameplay" src="https://github.com/user-attachments/assets/060b3b1d-e9be-4506-94a9-cae2baa6306c" />
+</div>
 
 # Hollow Knight 2D Demake - LibGDX (Java)
 
