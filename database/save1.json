@@ -1,0 +1,51 @@
+{
+  "slotNumber": 1,
+  "masks": 5,
+  "soul": 99.0,
+  "playerX": 100.0,
+  "playerY": 200.0,
+  "currentEnvironment": "Tutorial",
+  "isBossActive": false,
+  "isBossDoorActive": false,
+  "bossX": 0.0,
+  "bossY": 0.0,
+  "bossHp": 60,
+  "bossState": "IDLE",
+  "enemyStates": {
+    "items": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "size": 0,
+    "ordered": true
+  },
+  "deaths": 1,
+  "enemiesKilled": 3,
+  "timePlayed": 126.80273,
+  "killedEnemyTypes": [
+    false,
+    false,
+    true,
+    true,
+    false,
+    true
+  ],
+  "achCompletion": false,
+  "achSpeedrun": false,
+  "achTrueHunter": false,
+  "achFalseKnight": false
+}
