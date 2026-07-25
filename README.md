@@ -1,3 +1,6 @@
+
+<img width="433" height="630" alt="CP_Posters_0000_HD" src="https://github.com/user-attachments/assets/060b3b1d-e9be-4506-94a9-cae2baa6306c" />
+
 # Hollow Knight 2D Demake - LibGDX (Java)
 
 A feature-rich 2D platformer game inspired by **Hollow Knight**, developed as an advanced computer graphics academic project using the **LibGDX** framework and **Java**. The project implements a clean **Model-View-Controller (MVC)** architectural pattern, custom physics, state management, and asset loading.
